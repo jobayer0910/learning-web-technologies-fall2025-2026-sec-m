@@ -11,7 +11,6 @@ include 'db.php';
 
 <h2>DISPLAY</h2>
 
-<!-- 🔍 SEARCH BOX (AJAX) -->
 <h3>Search Product</h3>
 <input type="text"
        placeholder="Search product by name"
@@ -23,7 +22,6 @@ include 'db.php';
 
 <hr>
 
-<!-- 📋 PRODUCT TABLE -->
 <table border="1" cellpadding="10">
 <tr>
     <th>Name</th>
@@ -50,7 +48,6 @@ while ($row = mysqli_fetch_assoc($result)) {
 ?>
 </table>
 
-<!-- ⚙️ AJAX SCRIPT -->
 <script>
 function searchProduct(value) {
 
